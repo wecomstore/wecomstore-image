@@ -1,0 +1,33 @@
+{
+    "name": "wecomstore/wecomstore-image",
+    "description": "The WecomStore Image Package",
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "aler.gl",
+            "email": "974291@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "ext-gd": "*"
+    },
+    "require-dev": {
+        "topthink/framework": "^6.0"
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "autoload": {
+        "psr-4": {
+            "wecomstore\\": "src"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "wecomstore\\ImageService"
+            ]
+        }
+    }
+}
